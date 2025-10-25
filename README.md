@@ -1,151 +1,174 @@
-🌱 PikoChat
+# 🌱 **PikoChat**
 
-Because sometimes, all we need is someone to interact with and share experiences.
+> *Because sometimes, all we need is someone to interact with and share experiences.*
 
-PikoChat is a peer-to-peer interaction platform that connects individuals worldwide to learn new languages, make friends, and share meaningful conversations.
-Built with the MERN Stack, PikoChat offers real-time chat, video calls, and a supportive community for global connection.
+**PikoChat** is a peer-to-peer interaction platform that connects individuals worldwide to **learn new languages**, **make friends**, and **share meaningful conversations**.  
+Built with the **MERN Stack**, it offers **real-time chat**, **video calls**, and a **supportive global community**.
 
-🌐 Live Demo
+---
 
-👉 PikoChat on Render
+## 🌐 **Live Demo**
+👉 [**Visit PikoChat**](https://pikochat.onrender.com)
 
-✨ Features
-🔒 User Authentication
+---
 
-Secure signup and login with JWT-based authentication.
-<img src="https://github.com/user-attachments/assets/32fea5fe-44c2-4d4e-b837-faccf1c68bf6" width="700" />
+## ✨ **Features**
 
-🧭 Profile Onboarding
+### 🔒 **User Authentication**
+Secure signup and login using **JWT-based authentication**.  
+<img width="1916" height="991" alt="signup" src="https://github.com/user-attachments/assets/f09977a2-7f3a-49b0-b672-1f97f61ffb7b" />
+<img width="1916" height="991" alt="login" src="https://github.com/user-attachments/assets/52bbcc41-1287-4003-af5d-d6b6c7b0aab0" />
 
-Complete your profile and choose support or learning preferences.
+---
+
+### 🧭 **Profile Onboarding**
+Complete your profile and select your support or learning preferences.  
 <img src="https://github.com/user-attachments/assets/4b75a0ed-9e52-4318-9316-830c42898418" width="700" />
 
-🤝 Friend System
+---
 
-Send, receive, and accept friend requests with real-time notifications.
+### 🤝 **Friend System**
+Send, receive, and accept friend requests with real-time notifications.  
 <img src="https://github.com/user-attachments/assets/eb76c255-64f7-4da2-bebe-667c84884cfb" width="700" />
 
-💬 Real-Time Chat
+---
 
-Seamless one-on-one messaging powered by Stream Chat.
+### 💬 **Real-Time Chat**
+Seamless messaging powered by **Stream Chat**.  
 <img src="https://github.com/user-attachments/assets/c7a62648-9f95-46ad-969f-4cd89bf8b9ef" width="700" />
 
-🎥 Video Calls
+---
 
-Engage in real-time video conversations using Stream Video SDK.
+### 🎥 **Video Calls**
+Engage in real-time one-on-one video conversations using **Stream Video SDK**.  
 <img src="https://github.com/user-attachments/assets/0e53d348-adeb-4548-b2cb-170c01d10487" width="700" />
 
-🔍 Friend Discovery
+---
 
-Find peers based on interests, support topics, or learning goals.
+### 🔍 **Friend Discovery**
+Find peers based on topics of interest and support preferences.
 
-🎨 Theme Customization
+---
 
-Choose from 30+ themes to personalize your experience.
+### 🎨 **Theme Customization**
+Choose from **30+ themes** to personalize your experience.
 
-📱 Responsive Design
+---
 
+### 📱 **Responsive Design**
 Optimized for all devices — desktop, tablet, and mobile.
 
-🚀 Tech Stack
-🖥️ Frontend
+---
 
-React 19 – UI Library
+## 🚀 **Tech Stack**
 
-React Router – Routing
+### 🖥️ **Frontend**
+- **React 19** – UI library  
+- **React Router** – Navigation  
+- **TanStack Query** – Data fetching & caching  
+- **Zustand** – State management  
+- **Stream Chat React** – Chat interface  
+- **Stream Video SDK** – Video calling  
+- **Tailwind CSS + DaisyUI** – Styling  
+- **Lucide React** – Icons  
+- **React Hot Toast** – Notifications  
+- **Axios** – API communication  
 
-TanStack Query – Data fetching & caching
+---
 
-Zustand – State management
+### ⚙️ **Backend**
+- **Node.js & Express** – Server framework  
+- **MongoDB & Mongoose** – Database  
+- **JWT & bcryptjs** – Authentication  
+- **Stream Chat** – Messaging backend  
+- **Cookie Parser** – Cookie handling  
+- **CORS** – Cross-origin setup  
+- **dotenv** – Environment configuration  
 
-Stream Chat React – Chat UI
+---
 
-Stream Video SDK – Video calls
+## 🧩 **Prerequisites**
+- Node.js **v16+**  
+- MongoDB (**Local or Atlas**)  
+- Stream.io Account (for Chat & Video)
 
-Tailwind CSS + DaisyUI – Styling
+---
 
-Lucide React – Icons
+## 🛠️ **Installation & Setup**
 
-React Hot Toast – Notifications
+### 1️⃣ **Clone the Repository**
+```bash
+git clone https://github.com/RatneshVaibhav/PikoChat.git
+cd PikoChat
+```
 
-Axios – API communication
+---
 
-⚙️ Backend
-
-Node.js & Express – Server framework
-
-MongoDB & Mongoose – Database
-
-JWT & bcryptjs – Authentication
-
-Stream Chat – Messaging backend
-
-Cookie Parser – Cookie handling
-
-CORS – Cross-origin setup
-
-dotenv – Environment configuration
-
-🧩 Prerequisites
-
-Node.js v16+
-
-MongoDB (Local or Atlas)
-
-Stream.io Account for Chat & Video
-
-⚙️ Installation
-1️⃣ Clone the Repository
-git clone <repository-url>
-cd sahaara
-
-2️⃣ Backend Setup
+### 2️⃣ **Backend Setup**
+```bash
 cd backend
 npm install
+```
 
+Create a `.env` file inside the `/backend` directory:
 
-Create a .env file in /backend:
-
-PORT=5001
+```env
+PORT=3000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
 NODE_ENV=development
 STREAM_API_KEY=your_stream_api_key
 STREAM_API_SECRET=your_stream_api_secret
+```
 
-3️⃣ Frontend Setup
+---
+
+### 3️⃣ **Frontend Setup**
+```bash
 cd frontend
 npm install
+```
 
+Create a `.env` file inside the `/frontend` directory:
 
-Create a .env file in /frontend:
-
+```env
 VITE_STREAM_API_KEY=your_stream_api_key
+```
 
-🏃 Running the Application
-Development Mode
+---
 
-Backend:
+## 🏃 **Running the Application**
 
+### 🧑‍💻 **Development Mode**
+
+**Backend:**
+```bash
 cd backend
 npm run dev
+```
+Runs at → [http://localhost:3000](http://localhost:3000)
 
+---
 
-Runs at → http://localhost:3000
-
-Frontend:
-
+**Frontend:**
+```bash
 cd frontend
 npm run dev
+```
+Runs at → [http://localhost:5173](http://localhost:5173)
 
+---
 
-Runs at → http://localhost:5173
-
-Production Build
+### 🚢 **Production Build**
+```bash
 npm run build
 npm start
+```
 
-📁 Folder Structure
+---
+
+## 📁 **Project Structure**
+```bash
 PikoChat/
 ├── backend/
 │   ├── src/
@@ -161,71 +184,133 @@ PikoChat/
 │   │   ├── components/       # Reusable components
 │   │   ├── pages/            # Page components
 │   │   ├── hooks/            # Custom hooks
-│   │   ├── lib/              # API utils
+│   │   ├── lib/              # API utilities
 │   │   ├── store/            # Zustand store
 │   │   ├── constants/        # App constants
-│   │   └── main.jsx          # Entry file
+│   │   └── main.jsx          # Entry point
 │   └── package.json
 └── package.json
+```
 
-🔑 Core Functionalities
-🔐 Authentication Flow
+---
 
-JWT tokens stored in HTTP-only cookies
+## 🔑 **Core Functionalities**
 
-Protected routes validated on each request
+### 🔐 **Authentication Flow**
+- JWT stored in **HTTP-only cookies**  
+- Protected routes verified on each request  
+- Onboarding required before accessing main features  
 
-Onboarding required before accessing main features
+### 🧑‍🤝‍🧑 **Friend System**
+- Discover users based on support topics  
+- Send / Accept / Decline friend requests  
+- Manage your friends list  
 
-🧑‍🤝‍🧑 Friend System
+### 💬 **Chat & 🎥 Video**
+- Real-time messaging with **Stream Chat**  
+- One-on-one video calls via **Stream Video SDK**  
+- Persistent chat history and call integration  
 
-Discover users based on support topics
+Examples include:  
+- Learn new languages  
+- Make online friends  
+- Loneliness & isolation  
+- Depression support  
+- Global interaction  
 
-Send / Accept / Decline friend requests
+### 🎨 **Themes**
+PikoChat offers **30+ DaisyUI themes**, including:  
+> Light, Dark, Cupcake, Forest, Dracula, Nord, Cyberpunk, and more!
 
-View your friends list
+### 🔒 **Security**
+- Password hashing with **bcryptjs**  
+- **HTTP-only JWT cookies**  
+- **CORS protection**  
+- **Input validation & Protected API routes**
 
-💬 Chat & 🎥 Video
+---
 
-Real-time chat with Stream Chat
+## 📡 **API Endpoints**
 
-One-on-one video calls with Stream Video SDK
+### 🧾 **Authentication**
+| Method | Endpoint | Description |
+|--------|-----------|-------------|
+| POST | `/api/auth/signup` | Register new user |
+| POST | `/api/auth/login` | User login |
+| POST | `/api/auth/logout` | Logout user |
+| POST | `/api/auth/onboarding` | Complete profile onboarding |
+| GET  | `/api/auth/me` | Get current user |
 
-Persistent chat history and tokens
+---
 
-🧠 Support Topics
+### 👥 **Users**
+| Method | Endpoint | Description |
+|--------|-----------|-------------|
+| GET | `/api/users` | Get recommended users |
+| GET | `/api/users/friends` | Get friend list |
+| POST | `/api/users/friend-request/:id` | Send friend request |
+| PUT | `/api/users/friend-request/:id/accept` | Accept friend request |
+| GET | `/api/users/friend-requests` | Get incoming requests |
+| GET | `/api/users/outgoing-friend-requests` | Get outgoing requests |
 
-Users can define:
+---
 
-Can Support: Topics they can help others with
+### 💬 **Chat**
+| Method | Endpoint | Description |
+|--------|-----------|-------------|
+| GET | `/api/chat/token` | Generate Stream chat token |
 
-Need Support: Topics they seek help in
+---
 
-Examples:
+## 💡 **What I Learned**
 
-Learn new languages
+### 🧠 **Technical Skills**
+**Frontend:**
+- Dynamic UI with React Hooks  
+- Routing using React Router  
+- State management with Zustand  
+- Responsive design using Tailwind CSS  
+- Data fetching with TanStack Query  
 
-Make online friends
+**Backend:**
+- RESTful APIs using Express  
+- JWT authentication & middleware  
+- MongoDB CRUD operations with Mongoose  
+- Stream Chat & Video SDK integration  
 
-Loneliness & isolation
+**Full-Stack Integration:**
+- Frontend ↔ Backend communication via Axios  
+- API error handling and environment setup  
+- Secure data flow and authentication  
 
-Depression support
+---
 
-Global interactions
+### 🧩 **Development Practices**
+- Version control with Git  
+- Debugging routing and API issues  
+- Organized code architecture  
+- Efficient feature delivery (3-day MVP build)
 
-🎨 Themes
+---
 
-30+ DaisyUI themes — including:
-light, dark, cupcake, forest, dracula, nord, cyberpunk, and more!
+### 🌟 **Soft Skills**
+- **Problem-Solving:** Debugging API and routing issues  
+- **Adaptability:** Evolved from language exchange → peer-support model  
+- **User-Centric Design:** Simple and meaningful UI  
+- **Time Management:** Delivered core features efficiently  
 
-🔒 Security
+---
 
-Password hashing with bcryptjs
+## ❤️ **Acknowledgments**
+- **Stream.io** for Chat & Video SDK  
+- **DaisyUI** & **TailwindCSS** for styling  
+- **Scaler School of Technology** for project guidance  
 
-HTTP-only JWT cookies
+---
 
-CORS protection
+### 📜 **License**
+This project is licensed under the **MIT License** — feel free to use and modify with attribution.
 
-Input validation
+---
 
-Protected API routes
+> _Built with ❤️ by [Ratnesh Vaibhav](https://github.com/RatneshVaibhav)_
